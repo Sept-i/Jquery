@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        li {
+            width: 300px;
+            height: 30px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        // 1第一种
+        // $(document).ready(function(){
+        //     $('li').hide();
+        // })
+
+        // 第二种推荐
+        // $(function () {
+        //     $('li').hide();
+
+        // })
+        $(function(){
+            $('li').click(function(){
+                alert($(this).html())
+            })
+        })
+    </script>
+</body>
+
+</html>

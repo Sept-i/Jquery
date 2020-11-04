@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../3-code/jquery.min.js"></script>
+</head>
+
+<body>
+    <div data-type="school">学校</div>
+    <script>
+        var div = document.querySelector('div');
+        // 原生js的方法
+        // console.log(div.getAttribute('data-type')); //第一种
+        // console.log(div.dataset.type); //第二种 h5新增的 只能获取以data-开头
+
+        // jQuery的方法
+        // console.log($("div").attr("data-type"));
+        // console.log($("div").data("type"));
+
+        // data()可以做数据存储
+        $("div").data("index",123)
+        console.log($("div").data("index"));
+    </script>
+</body>
+
+</html>
